@@ -105,8 +105,19 @@ nav {
   transform-origin: bottom left;
 }
 
-.navItem:hover {
+.navItem:hover,
+.navIcons:hover {
   font-weight: 700;
+}
+
+.navIcons {
+  display: block;
+}
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .container {
@@ -118,6 +129,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.pizza,
+.pizzaImg {
+  display: block;
 }
 
 .overlay {
@@ -186,10 +202,10 @@ nav {
   color: var(--textColor);
 }
 
-.menuBtn:hover , .reserveBtn:hover {
+.menuBtn:hover,
+.reserveBtn:hover {
   background-color: var(--secondaryColor);
 }
-
 
 /* Anchor Tag */
 a {
@@ -202,17 +218,51 @@ a {
 ul {
   list-style: none;
 }
-
-
-@media only screen and (max-width: 600px) {
-    .pizza{
-        display: none;
-    }
+footer {
+  text-align: center;
+  color: var(--textColor);
 }
 
+@media only screen and (max-width: 1000px) {
+  .container {
+    height: 100vh;
+  }
 
+  .pizza,
+  .pizzaImg {
+    display: none;
+  }
 
-@media only screen and (max-width: 600px) {
-    
+  .picContainer {
+    justify-content: center;
+  }
+
+  .textContainer {
+    top: 5%;
+    height: 500px;
+  }
+
+  .burger {
+    position: absolute;
+    top: 5%;
+  }
+
+  .navIcons {
+    display: none!important;
+  }
 }
 
+@media only screen and (max-width: 600px) {
+  .navItems {
+    display: flex;
+  }
+  .navIcons{
+    display: block!important;
+  }
+  .navText {
+    display: none!important;
+  }
+  .navIcons:hover {
+    font-weight: 700;
+  }
+}
