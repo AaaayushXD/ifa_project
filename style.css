@@ -31,6 +31,7 @@
   --textColor: #e8e8e8;
   --hoverTextColor: #4e4c4cd3;
   --secondaryColor: rgb(255, 105, 125);
+  --overlayColor: #0c0c0c79;
 }
 
 body {
@@ -45,6 +46,8 @@ body {
   overflow-x: hidden;
   z-index: 0;
 }
+
+
 
 /* Navbar */
 nav {
@@ -80,7 +83,7 @@ nav {
   font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular" sans-serif;
   font-weight: 500;
-  padding: 0px 5px;
+  padding: 8px;
   cursor: pointer;
   color: var(--textColor);
   letter-spacing: 0.5px;
@@ -120,15 +123,23 @@ nav {
   gap: 5px;
 }
 
+.selected {
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+}
+
 .container {
-  width: 100vw;
   position: relative;
+  width: 100vw;
+  height: calc(100vh - 180px);
 }
 
 .picContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .pizza,
@@ -142,17 +153,17 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0c0c0c79;
+  background-color: var(--overlayColor);
   z-index: 1;
 }
 
 .textContainer {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 20%;
   width: 60%;
   height: 300px;
-  background-color: #0c0c0c79;
+  background-color: var(--overlayColor);
   z-index: 3;
   color: var(--textColor);
   text-align: center;
@@ -207,10 +218,98 @@ nav {
   background-color: var(--secondaryColor);
 }
 
+
+
+
+/* About Page */
+
+.mainContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aboutPic {
+  background: url("./assets/dhalbhats.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.infoImg {
+  height: 250px;
+}
+
+.aboutText {
+  color: var(--textColor);
+  max-width: 800px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.infoTitle {
+  font-size: 40px;
+  padding: 5px 15px;
+  margin-bottom: 5px;
+}
+.mainBody,
+.infoSlogan {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.aboutContact {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.aboutLocation,
+.aboutCall,
+.aboutEmail {
+  display: flex;
+  margin: 10px 0px;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 10px;
+  border-bottom: 3px dotted var(--hoverTextColor);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.aboutLocation:hover,
+.aboutCall:hover,
+.aboutEmail:hover {
+  color: var(--secondaryColor);
+}
+
+
+
+
+
+
+
 /* Anchor Tag */
 a {
   text-decoration: none;
-  color: white;
+  color: var(--textColor);
   height: 100%;
   width: 100%;
 }
@@ -219,10 +318,13 @@ ul {
   list-style: none;
 }
 footer {
+  margin-bottom: 10px;
   text-align: center;
   color: var(--textColor);
 }
 
+
+/* Media Query */
 @media only screen and (max-width: 1000px) {
   .container {
     height: 100vh;
@@ -248,7 +350,7 @@ footer {
   }
 
   .navIcons {
-    display: none!important;
+    display: none !important;
   }
 }
 
@@ -256,11 +358,11 @@ footer {
   .navItems {
     display: flex;
   }
-  .navIcons{
-    display: block!important;
+  .navIcons {
+    display: block !important;
   }
   .navText {
-    display: none!important;
+    display: none !important;
   }
   .navIcons:hover {
     font-weight: 700;
