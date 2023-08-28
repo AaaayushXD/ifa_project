@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservation</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <head>
+      <nav>
+        <div class="logoNav">
+          <img src="./assets/main_w_logo.png" alt="logo" class="navLogoImg" />
+        </div>
+        <div class="navBar">
+          <ul class="navItems">
+            <li class="navItem">
+              <a href="./index.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> home </span>
+                <p class="navText">Home</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./about.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> info </span>
+                <p class="navText">About us</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./menu.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons">
+                  menu_book
+                </span>
+                <p class="navText">Menu</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./gallery.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> photo </span>
+                <p class="navText">Gallery</p>
+              </a>
+            </li>
+            <li class="navItem selected">
+              <a href="#" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> event </span>
+                <p class="navText">Reservation</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./contact.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons">
+                  contact_page
+                </span>
+                <p class="navText">Contact us</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </head>
+    <main>
+      <div class="reserveContainer">
+        <div class="reserveTableContainer">
+          <form action="/">
+            <h1 class="reserveTitle">Book a table</h1>
+            <div class="inputs">
+              <div class="break">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  id="fname"
+                  class="inputFields"
+                  required
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  id="fname"
+                  class="inputFields"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                class="inputFields"
+                required
+                autocomplete="off"
+              />
+              <input
+                type="number"
+                maxlength="10"
+                placeholder="Phone Number"
+                class="inputFields"
+                required
+                autocomplete="off"
+              />
+              <div class="break">
+                <input
+                type="datetime-local"
+                placeholder="Date and time"
+                id="date"
+                class="inputFields"
+                required
+                autocomplete="off"
+              />
+              <select name="purpose" id="purpose" class="inputFields ocassions">
+                <option class="ocassion" value="0" selected >Select the ocassion</option>
+                <option class="ocassion" value="1">Family Gathering</option>
+                <option class="ocassion" value="2">Romantic Date</option>
+                <option class="ocassion" value="3">Friends meetup</option>
+                <option class="ocassion" value="4">Birthday Party</option>
+              </select>
+              
+              </div>
+              <div class="break">
+                <input
+                  type="number"
+                  id="noTable"
+                  maxlength="10"
+                  placeholder="No of Table"
+                  class="inputFields"
+                  required
+                  autocomplete="off"
+                />
+                <input
+                  type="number"
+                  id="noPeople"
+                  max="50"
+                  placeholder="No of People"
+                  class="inputFields"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <textarea
+                name="additionalInfo"
+                id="addInfo"
+                cols="20"
+                rows="10"
+                placeholder="Additional Info"
+                class="inputFields"
+                autocomplete="off"
+              ></textarea>
+            </div>
+            <div class="btnSubmit">
+                <button class="contactSubmit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer><p>Copyright &#9400; Aayush Lamichhane</p></footer>
+  </body>
 </html>

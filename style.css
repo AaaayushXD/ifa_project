@@ -7,7 +7,8 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
+  height: 5px;
 }
 
 /* Track */
@@ -358,7 +359,11 @@ form {
 }
 
 #fname,
-#lname {
+#lname,
+#noTable,
+#noPeople,
+#date,
+#purpose {
   width: 45%;
 }
 
@@ -384,6 +389,245 @@ form {
 .contactSubmit:focus {
   outline: none;
 }
+
+/* Reservation Table */
+.reserveContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--textColor);
+}
+.reserveTableContainer {
+  width: 80%;
+  height: 90%;
+}
+
+.reserveTitle {
+  margin: 20px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ocassion {
+  color: var(--textColor);
+  padding: 20px;
+  border-radius: 20px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #181818;
+  border: 1px solid var(--hoverTextColor);
+  flex-wrap: wrap;
+}
+
+.btnSubmit {
+  margin: 20px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* GAllery */
+
+.galleryContainer {
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--textColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.venueContainer {
+  margin: 10px;
+  padding: 10px;
+  max-height: 500px;
+}
+
+.galleryTitle {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 15px 0px;
+}
+
+.gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  height: 100%;
+}
+
+.galleryItem {
+  scroll-snap-align: center;
+  min-width: 75%;
+  max-height: 400px;
+}
+
+.galleryImg {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.specialItemsContainer {
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+}
+
+.specialItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.specialItem {
+  position: relative;
+  display: flex;
+  width: 350px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 3px 3px 25px -6px rgba(97, 97, 97, 0.75);
+  cursor: pointer;
+  z-index: 1;
+}
+.specialItem:hover {
+  transform: scale(1.05) translateY(-1%);
+}
+
+.specialItemImg {
+  width: 100%;
+  height: 100%;
+}
+
+.overlayText {
+  position: absolute;
+  background-color: var(--overlayColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  transition: transform 3ms ease-in-out;
+}
+
+.specialItem:hover .overlayText {
+  transform: translateY(0%);
+}
+
+.overlayTextTitle {
+  font-size: 25px;
+  padding: 5px;
+}
+
+.overlayTextPrice {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.reviewContainer {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.reviewSlider {
+  width: fit-content;
+  display: flex;
+  /* overflow-y: hidden; */
+  overflow-x: scroll;
+  /* scroll-behavior: smooth; */
+  /* scroll-snap-type: x mandatory; */
+  /* transition: 5ms ease-in-out; */
+}
+
+.reviewImgContainer {
+  width: 100vw;
+  padding: 20px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* scroll-snap-align: center; */
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  padding: 20px;
+  align-items: center;
+  min-height: 80%;
+  max-width: 100%;
+  background-color: var(--overlayColor);
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px 3px rgb(61, 61, 61);
+}
+.review {
+  margin: 10px;
+  border: 1px solid blue;
+}
+.avatarContainer {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.reviewDetail {
+  margin-top: 10px;
+  width: 100%;
+  min-height: 60%;
+}
+
+.avatar {
+  padding: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 60%;
+}
+
+.avatarImg {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.reviewTitle {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+.reviewText {
+  font-size: 18px;
+  color: rgb(177, 175, 175);
+  padding: 10px;
+}
+
 
 /* Anchor Tag */
 a {

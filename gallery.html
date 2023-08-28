@@ -1,11 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script defer src="./script.js"></script> 
+    </head>
+  <body>
+    <head>
+      <nav>
+        <div class="logoNav">
+          <img src="./assets/main_w_logo.png" alt="logo" class="navLogoImg" />
+        </div>
+        <div class="navBar">
+          <ul class="navItems">
+            <li class="navItem">
+              <a href="./index.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> home </span>
+                <p class="navText">Home</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./about.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> info </span>
+                <p class="navText">About us</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./menu.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons">
+                  menu_book
+                </span>
+                <p class="navText">Menu</p>
+              </a>
+            </li>
+            <li class="navItem selected">
+              <a href="#" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> photo </span>
+                <p class="navText">Gallery</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./reservation.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> event </span>
+                <p class="navText">Reservation</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./contact.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons">
+                  contact_page
+                </span>
+                <p class="navText">Contact us</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </head>
+    <main>
+      <div class="galleryContainer">
+        <section class="venueContainer">
+          <h1 class="galleryTitle">Our Venue</h1>
+          <div class="galleryImagesContainer">
+            <div class="gallery">
+              <div class="galleryItem">
+                <img
+                  src="./assets/venue1.webp"
+                  class="galleryImg"
+                  alt="venue gallery"
+                />
+              </div>
+              <div class="galleryItem">
+                <img
+                  src="./assets/venue2.webp"
+                  class="galleryImg"
+                  alt="venue gallery"
+                />
+              </div>
+              <div class="galleryItem">
+                <img
+                  src="./assets/venue3.webp"
+                  class="galleryImg"
+                  alt="venue gallery"
+                />
+              </div>
+              <div class="galleryItem">
+                <img
+                  src="./assets/venue4.webp"
+                  class="galleryImg"
+                  alt="venue gallery"
+                />
+              </div>
+              <div class="galleryItem">
+                <img
+                  src="./assets/venue5.webp"
+                  class="galleryImg"
+                  alt="venue gallery"
+                />
+              </div>
+              <div class="galleryItem">
+                <img
+                  src="./assets/venue6.webp"
+                  class="galleryImg"
+                  alt="venue gallery"
+                />
+              </div>
+          </div>
+        </section>
+
+        <section class="specialContainer">
+          <h1 class="galleryTitle">Special Items</h1>
+          <div class="specialItemsContainer">
+            <div class="specialItems">
+
+                <div class="specialItem">
+                  <img src="./assets/nepSet.webp" class="specialItemImg" alt="">
+                  <div class="overlayText">
+                    <h3 class="overlayTextTitle">Nepali Khane Set</h3>
+                    <p class="overlayTextPrice">Rs 200</p>
+                  </div>
+                </div>
+
+                <div class="specialItem">
+                  <img src="./assets/newariSet.webp" class="specialItemImg" alt="">
+                  <div class="overlayText">
+                    <h3 class="overlayTextTitle">Newari Khane Set</h3>
+                    <p class="overlayTextPrice">Rs 250</p>
+                  </div>
+                </div>
+
+                <div class="specialItem"><img src="./assets/momo.webp" class="specialItemImg" alt="">
+                  <div class="overlayText">
+                    <h3 class="overlayTextTitle">Jhol Momo</h3>
+                    <p class="overlayTextPrice">Rs 350</p>
+                  </div></div>
+                <div class="specialItem"><img src="./assets/burger.webp" class="specialItemImg" alt="">
+                  <div class="overlayText">
+                    <h3 class="overlayTextTitle"> Chicken Burger</h3>
+                    <p class="overlayTextPrice">Rs 250</p>
+                  </div></div>
+                <div class="specialItem"><img src="./assets/chicken.webp" class="specialItemImg" alt="">
+                  <div class="overlayText">
+                    <h3 class="overlayTextTitle">Tandoori Chicken</h3>
+                    <p class="overlayTextPrice">Rs 450</p>
+                  </div></div>
+                <div class="specialItem"><img src="./assets/pizza.webp" class="specialItemImg" alt="">
+                  <div class="overlayText">
+                    <h3 class="overlayTextTitle">Cheese Pizza</h3>
+                    <p class="overlayTextPrice">Rs 850</p>
+                  </div></div>
+                <div class="specialItem"><img src="./assets/ramen.webp" class="specialItemImg" alt="">
+                  <div class="overlayText">
+                    <h3 class="overlayTextTitle">Ramen</h3>
+                    <p class="overlayTextPrice">Rs 550</p>
+                  </div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviewContainer">
+          <h1 class="galleryTitle">Reviews</h1>
+          <div class="reviewSlider">
+          <div class="reviewImgContainer">
+            <div class="reviews">
+              <div class="avatarContainer">
+                  <div class="avatar">
+                    <img src="./assets/avatar/avatar1.png" alt="" class="avatarImg">
+                  </div>
+              </div>
+              <div class="reviewDetail">
+                <div class="reviewTitle">Lorem Ipsum 1</div>
+                <div class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto possimus error ad consectetur voluptatibus reiciendis quisquam! A optio exercitationem adipisci illum ullam tempore accusamus hic aliquam nemo vitae dolorum nihil, eveniet sunt natus commodi id unde voluptatem dignissimos, officiis quisquam ipsum qui? Veniam assumenda eligendi suscipit in quo ipsum ad?</div>
+              </div>
+              <div class="leftArrow"></div>
+              <div class="rightArrow"></div>
+               </div>
+          </div>
+          <div class="reviewImgContainer">
+            <div class="reviews">
+              <div class="avatarContainer">
+                  <div class="avatar">
+                    <img src="./assets/avatar/avatar2.png" alt="" class="avatarImg">
+                  </div>
+              </div>
+              <div class="reviewDetail">
+                <div class="reviewTitle">Lorem Ipsum 2</div>
+                <div class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto possimus error ad consectetur voluptatibus reiciendis quisquam! A optio exercitationem adipisci illum ullam tempore accusamus hic aliquam nemo vitae dolorum nihil, eveniet sunt natus commodi id unde voluptatem dignissimos, officiis quisquam ipsum qui? Veniam assumenda eligendi suscipit in quo ipsum ad?</div>
+              </div>
+              <div class="leftArrow"></div>
+              <div class="rightArrow"></div>
+               </div>
+          </div>
+          <div class="reviewImgContainer">
+            <div class="reviews">
+              <div class="avatarContainer">
+                  <div class="avatar">
+                    <img src="./assets/avatar/avatar3.png" alt="" class="avatarImg">
+                  </div>
+              </div>
+              <div class="reviewDetail">
+                <div class="reviewTitle">Lorem Ipsum 3</div>
+                <div class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto possimus error ad consectetur voluptatibus reiciendis quisquam! A optio exercitationem adipisci illum ullam tempore accusamus hic aliquam nemo vitae dolorum nihil, eveniet sunt natus commodi id unde voluptatem dignissimos, officiis quisquam ipsum qui? Veniam assumenda eligendi suscipit in quo ipsum ad?</div>
+              </div>
+              <div class="leftArrow"></div>
+              <div class="rightArrow"></div>
+               </div>
+          </div>
+          <div class="reviewImgContainer">
+            <div class="reviews">
+              <div class="avatarContainer">
+                  <div class="avatar">
+                    <img src="./assets/avatar/avatar4.png" alt="" class="avatarImg">
+                  </div>
+              </div>
+              <div class="reviewDetail">
+                <div class="reviewTitle">Lorem Ipsum 4</div>
+                <div class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto possimus error ad consectetur voluptatibus reiciendis quisquam! A optio exercitationem adipisci illum ullam tempore accusamus hic aliquam nemo vitae dolorum nihil, eveniet sunt natus commodi id unde voluptatem dignissimos, officiis quisquam ipsum qui? Veniam assumenda eligendi suscipit in quo ipsum ad?</div>
+              </div>
+              <div class="leftArrow"></div>
+              <div class="rightArrow"></div>
+               </div>
+          </div>
+          <div class="reviewImgContainer">
+            <div class="reviews">
+              <div class="avatarContainer">
+                  <div class="avatar">
+                    <img src="./assets/avatar/avatar5.png" alt="" class="avatarImg">
+                  </div>
+              </div>
+              <div class="reviewDetail">
+                <div class="reviewTitle">Lorem Ipsum 5</div>
+                <div class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto possimus error ad consectetur voluptatibus reiciendis quisquam! A optio exercitationem adipisci illum ullam tempore accusamus hic aliquam nemo vitae dolorum nihil, eveniet sunt natus commodi id unde voluptatem dignissimos, officiis quisquam ipsum qui? Veniam assumenda eligendi suscipit in quo ipsum ad?</div>
+              </div>
+              <div class="leftArrow"></div>
+              <div class="rightArrow"></div>
+               </div>
+          </div>
+          <div class="reviewImgContainer">
+            <div class="reviews">
+              <div class="avatarContainer">
+                  <div class="avatar">
+                    <img src="./assets/avatar/avatar6.png" alt="" class="avatarImg">
+                  </div>
+              </div>
+              <div class="reviewDetail">
+                <div class="reviewTitle">Lorem Ipsum 6</div>
+                <div class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto possimus error ad consectetur voluptatibus reiciendis quisquam! A optio exercitationem adipisci illum ullam tempore accusamus hic aliquam nemo vitae dolorum nihil, eveniet sunt natus commodi id unde voluptatem dignissimos, officiis quisquam ipsum qui? Veniam assumenda eligendi suscipit in quo ipsum ad?</div>
+              </div>
+              <div class="leftArrow"></div>
+              <div class="rightArrow"></div>
+               </div>
+          </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright &#9400; Aayush Lamichhane</p>
+    </footer>
+  </body>
 </html>
