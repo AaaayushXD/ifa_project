@@ -1,11 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Page</title>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <head>
+      <nav>
+        <div class="logoNav">
+          <img src="./assets/main_w_logo.png" alt="logo" class="navLogoImg" />
+        </div>
+        <div class="navBar">
+          <ul class="navItems">
+            <li class="navItem">
+              <a href="./index.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> home </span>
+                <p class="navText">Home</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./about.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> info </span>
+                <p class="navText">About us</p>
+              </a>
+            </li>
+            <li class="navItem selected">
+              <a href="#" class="navLinks">
+                <span class="material-symbols-outlined navIcons">
+                  menu_book
+                </span>
+                <p class="navText">Menu</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./gallery.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> photo </span>
+                <p class="navText">Gallery</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./reservation.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons"> event </span>
+                <p class="navText">Reservation</p>
+              </a>
+            </li>
+            <li class="navItem">
+              <a href="./contact.html" class="navLinks">
+                <span class="material-symbols-outlined navIcons">
+                  contact_page
+                </span>
+                <p class="navText">Contact us</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </head>
+    <main>
+      <div class="mainMenuContainer">
+        <div class="menuContainer">
+          <div class="menuPageTitle"><h1>Menu</h1></div>
+          <div class="menuItemsContainer">
+            <div class="menuItemsSection">
+              <div class="categoryTitle">Drinks</div>
+              <div class="menuItems">
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Black Tea</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 20</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/blackTea.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Milk Tea</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 40</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/tea.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Milkshake</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 120</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/milkshakes.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Coffee</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 150</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/coffee.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Green Tea</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 20</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/green-tea.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menuItemsSection">
+              <div class="categoryTitle">Snacks</div>
+              <div class="menuItems">
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Chicken Nuggets</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 360</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/chicken-nuggets.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Chicken Lollipop</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 450</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/lollipop.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Chicken Chilli</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 300</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/chilli.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Corn Dog</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 150</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/cornDog.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Cheese Balls</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 120</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/cheeseBall.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Laphing</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 80</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/lafing.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menuItemsSection">
+              <div class="categoryTitle">Momo</div>
+              <div class="menuItems">
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Chicken Momo</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 250</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/chickenMomo.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Veg Momo</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 200</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/vegmomo.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Jhol Momo</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 300</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/momo.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">C Momo</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 400</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/cmomo.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Fried Momo</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 300</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/friedMomo.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>           
+            <div class="menuItemsSection">
+              <div class="categoryTitle">Burgers</div>
+              <div class="menuItems">
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Chicken Burger</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 360</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/burger.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Veg Burger</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 280</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/vegBurger.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Double Patty Burger</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 450</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/doubleburger.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Cheese Burger</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 300</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/cheeseburger.webp" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Fries</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 150</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/fries.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menuItemsSection">
+              <div class="categoryTitle">Pizzas</div>
+              <div class="menuItems">
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Chicken Pizza</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 670</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/pizza.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Cheese Pizza</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 560</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/cheese-pizza.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Magarita Pizza</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 500</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/mPizza.png" alt="" />
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="menuItemsSection">
+              <div class="categoryTitle">Biryani</div>
+              <div class="menuItems">
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Chicken Biryani</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 750</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/chickenBiryani.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Veg Biryani</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 550</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/vegBiryani.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Egg Biryani</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 600</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/eggBiryani.webp" alt="" />
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="menuItemsSection">
+              <div class="categoryTitle">Khana Set</div>
+              <div class="menuItems">
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Nepali Khana Set</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 200</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/nepSet.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Newari khana Set</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 250</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/newariSet.png" alt="" />
+                  </div>
+                </div>
+                
+                </div>
+                
+              </div>
+              <div class="menuItemsSection">
+              <div class="categoryTitle">Soft Drinks</div>
+              <div class="menuItems">
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Coke</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 100</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/coke.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Fanta</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 100</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/fanta.png" alt="" />
+                  </div>
+                </div>
+                <div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Sprite</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 100</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/sprite.png" alt="" />
+                  </div>
+                </div>
+<div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Slice</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 120</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/slice.png" alt="" />
+                  </div>
+                </div>
+<div class="menuItem">
+                  <div class="itemInfo">
+                    <div class="menuItemsTitle">Mountain Dew</div>
+                    <div class="menuItemInfo">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam, maxime!
+                    </div>
+                    <div class="menuPrice">Rs 100</div>
+                  </div>
+                  <div class="menuItemImg">
+                    <img src="./assets/menuItems/dew.png" alt="" />
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+  	 <div class="footContainer">
+  	 	<div class="footRow">
+  	 		<div class="footer-col">
+  	 			<h4>About us</h4>
+  	 			<ul>
+  	 				<li><a href="./about.html">about us</a></li>
+  	 				<li><a href="./menu.html">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">Order</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 				<li><a href="./contact.html">contact us</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Our Resturant</h4>
+  	 			<ul>
+  	 				<li><a href="./gallery.html">Gallery</a></li>
+  	 				<li><a href="./menu.html">menu</a></li>
+  	 				<li><a href="#">Carrer</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-x-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+        </div>
+        <div class="footerRow" id="copyright">Copyright &#169; Aayush Lamichhane</div>
+  	 	</div>
+  	 </div>
+  </footer>
+  </body>
 </html>
