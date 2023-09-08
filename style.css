@@ -715,7 +715,8 @@ form {
 
 .menuItem {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0px 10px;
   align-items: center;
   flex-wrap: wrap;
   min-height: 130px;
